@@ -1,4 +1,4 @@
-$computers = "server1","server2"
+$computers = "ULS-DP-SQLCDW", "10.24.9.46"
 
 foreach ($computer in $computers) {
     if (Test-Connection $computer -Quiet) {
