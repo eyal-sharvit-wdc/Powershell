@@ -1,0 +1,13 @@
+name: Ping Servers
+
+on: [push]
+
+jobs:
+  ping_servers:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Ping Servers
+      shell: powershell
+      run: .\script2.ps1 ULS-DP-SQLCDW 10.24.9.46
+      # replace with your own script name and server names
