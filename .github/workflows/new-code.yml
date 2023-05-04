@@ -6,8 +6,8 @@ jobs:
   ping_servers:
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3.5.2
     - name: Ping Servers
       shell: powershell
-      run: .\script2.ps1 ULS-DP-SQLCDW 10.24.9.46
+      run: .\script2.ps1
       # replace with your own script name and server names
